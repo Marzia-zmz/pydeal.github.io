@@ -73,6 +73,9 @@ p{
 p>b{
 	color:red;
 }
+p>b:after{
+	content:attr(dir);
+}
 footer>a{
 	color:blue;
 	text-decoration:none;
@@ -89,7 +92,7 @@ footer>a{
 	<br>
 	「屁歪交易」是其中的一支队伍，由五人组成。<del>这是我们的团队页</del>
 </blockquote>
-<p>已成交 <b id=n>?</b> 起交易</p>
+<p>已成交 <b id=n></b> 起交易</p>
 <ul class=team>
 	<li>
 		<img src=http://tp3.sinaimg.cn/2707114750/180/0>
@@ -129,4 +132,4 @@ footer>a{
 </footer>
 
 <script src=http://1.mouto.org/x.js></script>
-<script>(_=cNz).c=function(_){n.innerHTML=_||0};_.j('c')</script>
+<script>(_=cNz).c=function(_){n.dir=_||0};_.j('c')</script>
